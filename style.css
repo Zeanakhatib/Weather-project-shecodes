@@ -1,0 +1,39 @@
+.container {
+  max-width: 600px;
+  padding: 60px;
+  margin: 0 auto;
+  background-color: rgb(199, 199, 199, 0.2);
+  border-radius: 20px;
+}
+h1 {
+  color: rgb(112, 117, 122);
+  display: inline-block;
+  font-family: Roboto, arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  height: 40px;
+  padding-left: 9px;
+  padding-top: 6px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+}
+img {
+  size: 80px;
+}
+h2 {
+  padding-top: 0px;
+  margin-top: 0;
+  font-size: 60px;
+}
+#unit {
+  font-size: 10px;
+  display: inline;
+  color: blueviolet;
+  text-decoration: underline;
+  cursor: pointer;
+}
