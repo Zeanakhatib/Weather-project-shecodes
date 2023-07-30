@@ -77,14 +77,12 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-  let countryElement = document.querySelector("#country");
 
   let celsiusTemperature = response.data.temperature.current;
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
 
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature) + "°";
   cityElement.innerHTML = response.data.city;
-  countryElement.innerHTML = response.data.country;
   console.log(response.data.country);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML =
