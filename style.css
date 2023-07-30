@@ -1,39 +1,96 @@
 .container {
+  background-image: url("images/barbie.png");
+  background-size: cover;
+  background-position: center;
   max-width: 600px;
-  padding: 60px;
+  padding: 30px;
   margin: 0 auto;
-  background-color: rgb(199, 199, 199, 0.2);
+
   border-radius: 20px;
 }
+
+#logo {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 h1 {
-  color: rgb(112, 117, 122);
-  display: inline-block;
+  color: #fdecf2;
+  text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
+    3px 3px 0 #e8097b;
   font-family: Roboto, arial, sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 400;
-  height: 40px;
   padding-left: 9px;
   padding-top: 6px;
   padding-bottom: 0px;
   margin-bottom: 0;
 }
 
-li {
-  list-style: none;
-  font-size: 15px;
+#city-info {
+  font-size: 16px;
+  color: #e8097b;
+
+  margin: 0;
+  padding: 0;
 }
-img {
-  size: 80px;
+
+#city-info span:first-letter {
+  text-transform: capitalize;
 }
-h2 {
-  padding-top: 0px;
-  margin-top: 0;
-  font-size: 60px;
+
+.weather-app-wrapper {
+  margin: 20px auto;
+  background-color: rgba(255, 216, 230, 0.578);
+  border-radius: 20px;
+  padding: 20px;
 }
-#unit {
-  font-size: 10px;
-  display: inline;
-  color: blueviolet;
-  text-decoration: underline;
-  cursor: pointer;
+
+.temp-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+#temperature {
+  color: #fdecf2;
+  text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
+    2px 2px 0 #e8097b;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 50px;
+}
+#creds {
+  color: white;
+  margin-top: 30px;
+}
+
+#info-panel div {
+  display: inline; /* Makes the elements display in line */
+}
+
+#info-panel h1 {
+  display: block; /* Keeps the city on its own line */
+}
+
+#info-panel {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+}
+.col-6 {
+  justify-content: flex-start;
+}
+
+#icon {
+  width: max-content;
+}
+#forecast {
+  color: #fdecf2;
+  text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
+    2px 2px 0 #e8097b;
 }
