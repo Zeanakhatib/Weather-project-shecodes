@@ -41,24 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
         forecastHTML =
           forecastHTML +
           `
-
-      <div class="col-2">
-        <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
-        <img
-          src="${forecastDay.condition.icon_url}"
-          alt=""
-          width="42"
-        />
-        <div class="weather-forecast-temperatures">
-          <span class="weather-forecast-temperature-max"> ${Math.round(
-            (forecastDay.temperature.maximum * 9) / 5 + 32
-          )}° </span>
-          <span class="weather-forecast-temperature-min"> ${Math.round(
-            (forecastDay.temperature.minimum * 9) / 5 + 32
-          )}° </span>
-        </div>
-      </div>
-  `;
+<div class="col-2">
+  <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
+  <img
+    src="${forecastDay.condition.icon_url.replace("http://", "https://")}"
+    alt="${forecastDay.condition.description}"
+    width="42"
+  />
+  <div class="weather-forecast-temperatures">
+    <span class="weather-forecast-temperature-max"> ${Math.round(
+      (forecastDay.temperature.maximum * 9) / 5 + 32
+    )}° </span>
+    <span class="weather-forecast-temperature-min"> ${Math.round(
+      (forecastDay.temperature.minimum * 9) / 5 + 32
+    )}° </span>
+  </div>
+</div>
+`;
       }
     });
 
