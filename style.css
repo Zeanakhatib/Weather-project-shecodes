@@ -34,7 +34,8 @@ h1 {
   color: #e8097b;
 
   margin: 0;
-  padding: 0;
+
+  padding-bottom: 20px;
 }
 
 #city-info span:first-letter {
@@ -92,7 +93,6 @@ h1 {
   width: max-content;
 }
 #forecast {
-  color: #fdecf2;
-  text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
-    2px 2px 0 #e8097b;
+  color: #e8097b;
+  font-weight: 600;
 }
