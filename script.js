@@ -110,7 +110,21 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
+function handlePosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+
+  let apiKey = "c45f0a4aefb72ac935cfb59c3oe1ca4t";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation() {
+  navigator.geolocation.getCurrentPosition(handlePosition);
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("chicago");
+getCurrentLocation();
