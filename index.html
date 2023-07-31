@@ -12,12 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbie Weather App</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/jpg" href="images/icon.png"/>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/icon.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="images/icon.png" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
-<img src="images/logo.png" alt="" id="logo">
+      <img src="images/logo.png" alt="" id="logo" />
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <form id="search-form" class="mb-3">
@@ -32,8 +35,11 @@
                 />
               </div>
               <div class="col-3">
-                <button type="submit" class="btn btn-primary mb-3" style="background-color:  #e8097b; color:  #fdecf2;
-">
+                <button
+                  type="submit"
+                  class="btn btn-primary mb-3"
+                  style="background-color: #e8097b; color: #fdecf2"
+                >
                   Submit
                 </button>
               </div>
@@ -52,27 +58,23 @@
             </div>
 
             <div class="col-6 d-flex justify-content-end">
-    <img
-      src=""
-      alt=""
-      id="icon"
-  
-    />
-    <strong id="temperature">15°</strong>
-</div>
+              <img src="" alt="" id="icon" />
+              <strong id="temperature">15°</strong>
+            </div>
 
-          <div class="weather-forecast" id="forecast"></div>
-
+            <div class="weather-forecast" id="forecast"></div>
+      
         </div>
+        <small id="creds">
+          <a
+            href="https://github.com/Zeanakhatib/Weather-project-shecodes"
+            style="color: rgb(232, 9, 123); text-shadow: none"
+            >Open Source Code</a
+          >
+          By Zeana Khatib
+        </small>
       </div>
-         <small id="creds">
-            <a href="https://github.com/Zeanakhatib/Weather-project-shecodes"
-              style="color: rgb(232, 9, 123); text-shadow: none;">Open Source Code</a 
-            >
-            By Zeana Khatib
-          </small>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
