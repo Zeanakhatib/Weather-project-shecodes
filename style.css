@@ -65,7 +65,9 @@ h1 {
   font-size: 50px;
 }
 #creds {
-  color: white;
+  color: #fdecf2;
+  text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
+    2px 2px 0 #e8097b;
   margin-top: 30px;
 }
 
