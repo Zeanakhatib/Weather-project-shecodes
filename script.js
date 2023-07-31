@@ -93,7 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "Wind:" + " " + Math.round(response.data.wind.speed) + " " + "km/h";
     dateElement.innerHTML = formatDate(response.data.time);
     getForecast(response.data.coordinates);
-    iconElement.setAttribute("src", response.data.condition.icon_url);
+
+    let iconUrl = response.data.condition.icon_url;
+    iconUrl = iconUrl.replace("http://", "https://");
+
+    iconElement.setAttribute("src", iconUrl);
     iconElement.setAttribute("alt", response.data.condition.description);
     iconElement.setAttribute("width", "60");
     getForecast(response.data.coordinates);
