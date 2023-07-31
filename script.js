@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayForecast(response) {
     let forecast = response.data.daily;
-
+    let iconUrl = response.data.condition.icon_url;
+    iconUrl = iconUrl.replace("http://", "https://");
     let forecastElement = document.querySelector("#forecast");
 
     let forecastHTML = `<div class="row">`;
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         forecastHTML =
           forecastHTML +
           `
+
       <div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
         <img
