@@ -17,10 +17,10 @@
 }
 
 h1 {
-  color: #fdecf2;
+  color: #fcd0ef;
   text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
-    3px 3px 0 #e8097b;
-  font-family: Roboto, arial, sans-serif;
+    3px 3px 0 #fe0082;
+  font-family: "Courgette", arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
   padding-left: 9px;
@@ -52,24 +52,29 @@ h1 {
 .temp-icon-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin-right: 0px;
   margin-top: 0px;
+  padding-left: 5px;
 }
 
 #temperature {
-  color: #fdecf2;
+  color: #fcd0ef;
   text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
-    2px 2px 0 #e8097b;
+    3px 3px 0 #e8097b;
   margin-right: 0px;
   margin-top: 0px;
   font-size: 50px;
+  font-family: "Courgette", arial, sans-serif;
+  padding-bottom: 20px;
 }
+
 #creds {
-  color: #fdecf2;
+  color: #fcd0ef;
   text-shadow: -1px -1px 0 #e8097b, 1px -1px 0 #e8097b, -1px 1px 0 #e8097b,
     2px 2px 0 #e8097b;
   margin-top: 30px;
+  font-family: "Courgette", arial, sans-serif;
 }
 
 #info-panel div {
@@ -91,6 +96,10 @@ h1 {
 
 #icon {
   width: max-content;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 #forecast {
   color: #e8097b;
