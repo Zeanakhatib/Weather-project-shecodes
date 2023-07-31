@@ -91,6 +91,7 @@ function displayTemperature(response) {
   windElement.innerHTML =
     "Wind:" + " " + Math.round(response.data.wind.speed) + " " + "km/h";
   dateElement.innerHTML = formatDate(response.data.time);
+  getForecast(response.data.coordinates);
   iconElement.setAttribute("src", response.data.condition.icon_url);
   iconElement.setAttribute("alt", response.data.condition.description);
   iconElement.setAttribute("width", "60");
