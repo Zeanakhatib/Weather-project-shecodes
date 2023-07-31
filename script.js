@@ -70,6 +70,7 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 function displayTemperature(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -103,7 +104,6 @@ function search(city) {
   axios.get(apiUrl).then(displayTemperature);
   console.log("search function called with city: " + city);
 }
-
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#getCity");
