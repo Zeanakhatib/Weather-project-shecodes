@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function displayForecast(response) {
     let forecast = response.data.daily;
+    let forecastElement = document.querySelector("#forecast");
     let iconUrl = response.data.condition.icon_url;
     iconUrl = iconUrl.replace("http://", "https://");
-    let forecastElement = document.querySelector("#forecast");
 
     let forecastHTML = `<div class="row">`;
     forecast.forEach(function (forecastDay, index) {
